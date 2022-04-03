@@ -30,7 +30,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func switchColor() {
-        button.setTitle("Next", for: .normal)
+        if count == 0 {
+            button.setTitle("Next", for: .normal)
+        }
         
         count += 1
         if count == 4 {
