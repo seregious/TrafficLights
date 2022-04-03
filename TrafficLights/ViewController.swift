@@ -12,27 +12,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var redLight: UIView!
     @IBOutlet weak var yellowLight: UIView!
     @IBOutlet weak var greenLight: UIView!
+    @IBOutlet weak var button: UIButton!
     
-    var count = 1
-    
-    
+    private var count = 0
+    private let isOn: CGFloat = 1
+    private let isOff: CGFloat = 0.2
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        redLight.alpha = 1
-        redLight.layer.cornerRadius = 75
-        
-        yellowLight.alpha = 0.2
-        yellowLight.layer.cornerRadius = 75
-        
-        greenLight.alpha = 0.2
-        greenLight.layer.cornerRadius = 75
-        
     }
     
+    override func viewWillLayoutSubviews() {
+        let cornerRadius = redLight.frame.height / 2
+        redLight.layer.cornerRadius = cornerRadius
+        yellowLight.layer.cornerRadius = cornerRadius
+        greenLight.layer.cornerRadius = cornerRadius
+    }
     
-
     @IBAction func switchColor() {
+        button.setTitle("Next", for: .normal)
+        
         count += 1
         if count == 4 {
             count = 1
@@ -40,14 +39,14 @@ class ViewController: UIViewController {
         
         switch count {
         case 1:
-            redLight.alpha = 1
-            greenLight.alpha = 0.2
+            greenLight.alpha = isOff
+            redLight.alpha = isOn
         case 2:
-            redLight.alpha = 0.2
-            yellowLight.alpha = 1
+            redLight.alpha = isOff
+            yellowLight.alpha = isOn
         case 3:
-            yellowLight.alpha = 0.2
-            greenLight.alpha = 1
+            yellowLight.alpha = isOff
+            greenLight.alpha = isOn
         default:
             break
         }

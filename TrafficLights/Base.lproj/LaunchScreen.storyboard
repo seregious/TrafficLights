@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,22 +13,22 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="zz6-Du-w0l">
-                                <rect key="frame" x="102" y="271.5" width="210" height="353"/>
+                                <rect key="frame" x="109" y="286" width="210" height="354"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Traffic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="21f-j5-ocG">
-                                        <rect key="frame" x="0.0" y="0.0" width="210" height="98.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Traffic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="21f-j5-ocG">
+                                        <rect key="frame" x="0.0" y="0.0" width="210" height="98.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" systemColor="systemRedColor"/>
                                         <size key="shadowOffset" width="3" height="-3"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Light" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QKM-SX-osf">
-                                        <rect key="frame" x="18.5" y="127.5" width="173" height="98"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="749" text="Light" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QKM-SX-osf">
+                                        <rect key="frame" x="19" y="127.66666666666669" width="172" height="98.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -36,7 +36,7 @@
                                         <size key="shadowOffset" width="3" height="-3"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gc2-ok-8vo">
-                                        <rect key="frame" x="34" y="254.5" width="142" height="98.5"/>
+                                        <rect key="frame" x="34" y="255.33333333333334" width="142" height="98.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -49,9 +49,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="zz6-Du-w0l" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="VQu-yI-JuD"/>
-                            <constraint firstItem="zz6-Du-w0l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="227.5" id="oep-4M-7mr"/>
-                            <constraint firstItem="zz6-Du-w0l" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sQW-1G-Ttg"/>
+                            <constraint firstItem="21f-j5-ocG" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.106551" id="7gC-h0-Egx"/>
+                            <constraint firstItem="zz6-Du-w0l" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="9GU-n0-W8I"/>
+                            <constraint firstItem="zz6-Du-w0l" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Gt7-DG-Z6Z"/>
+                            <constraint firstItem="21f-j5-ocG" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="105:463" id="LgX-KZ-D2u"/>
+                            <constraint firstItem="QKM-SX-osf" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="86:463" id="Rzy-5n-WQr"/>
+                            <constraint firstItem="QKM-SX-osf" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.106551" id="WCj-Px-CzN"/>
+                            <constraint firstItem="gc2-ok-8vo" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.106551" id="j77-BH-d7G"/>
+                            <constraint firstItem="gc2-ok-8vo" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="71:463" id="tAS-5g-ZrN"/>
                         </constraints>
                     </view>
                 </viewController>
